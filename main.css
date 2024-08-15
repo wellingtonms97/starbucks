@@ -1,11 +1,11 @@
-/* Reseta margens e padding padrão de todos os elementos */
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fonte personalizada */
+/* Fonte Personalizada */
 .new-amsterdam-regular {
     font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
@@ -17,44 +17,45 @@ header {
     padding: 24px 0;
     background-color: white;
     color: black;
-    border-bottom: 1px solid rgba(158, 156, 156, 0.5); /* Linha divisória abaixo do cabeçalho */
+    border-bottom: 1px solid rgba(158, 156, 156, 0.5); 
 }
 
 .nav-wrapper {
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
-    justify-content: space-between; /* Distribui espaço entre logo e menu */
-    width: 100%; /* Ocupa toda a largura da tela */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .logo-wrapper {
-    flex: 0 0 auto; /* Não permite que a logo cresça */
+    flex: 0 0 auto;
 }
 
 .brand-logo img {
     width: 40px;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
     margin-left: 30px;
 }
 
+/* Menu de Navegação */
 .menu {
-    display: flex; /* Alinha os itens horizontalmente */
-    list-style: none; /* Remove os marcadores da lista */
-    flex: 1 1 auto; /* Permite que o menu ocupe o espaço restante */
-    align-items: center; /* Alinha verticalmente todos os itens no centro */
+    display: flex;
+    list-style: none;
+    flex: 1 1 auto;
+    align-items: center;
     margin-left: -5px;
 }
 
 .menu li {
-    display: flex; /* Faz com que o conteúdo do <li> se alinhe corretamente */
-    align-items: center; /* Alinha verticalmente o texto e a imagem */
-    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre todos os itens */
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .menu li a {
     color: #807e7e;
-    text-decoration: none; /* Remove o sublinhado dos links */
-    padding: 4px 16px; /* Espaçamento interno dos links */
+    text-decoration: none;
+    padding: 4px 16px;
     display: flex;
     align-items: center;
     font-family: "New Amsterdam";
@@ -64,47 +65,41 @@ header {
 .menu li img {
     width: 100px;
     height: auto;
-    margin-left: 1800px; /* Espaço à esquerda da imagem */
-    margin-right: 10px; /* Espaço entre a imagem e o ícone */
+    margin-left: 1800px;
+    margin-right: 10px;
 }
 
-.menu li:nth-child(2) {
-    margin-left: -34px;
-    margin-right: -20px;
-}
-
-.menu li:nth-child(3) {
-    margin-left: 5px;
-}
-
+/* Ícones */
 .icon {
     width: 24px;
     height: 24px;
-    fill: #000; /* Cor do ícone */
+    fill: #000;
 }
 
-/* Seções */
+/* Seções Principais */
 section {
     display: flex;
-    flex-direction: column; /* Coloca os elementos em coluna */
-    align-items: center; /* Centraliza os elementos horizontalmente */
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Imagens das Seções */
 section img {
     width: 1000px;
     height: auto;
     display: block;
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    margin-bottom: 20px;
 }
 
+/* Retângulos de Fundo */
 .rectangle, .rectangle2, .rectangle3, .rectangle4 {
     width: 1000px;
     background-color: #d4e9e2;
-    margin-top: 20px; /* Espaçamento superior em relação à imagem */
+    margin-top: 20px;
 }
 
 .rectangle {
-    height: 150px; /* Altura do retângulo */
+    height: 150px;
 }
 
 .rectangle2 {
@@ -120,29 +115,31 @@ section img {
     transform: translateY(-435px);
 }
 
+/* Texto das Seções */
 section p {
-    transform: translateY(-100px); /* Move o texto 100px para cima */
+    transform: translateY(-100px);
     font-size: 17px;
 }
 
-/* Botões */
+/* Estilos de Botões */
 button, .button1, .button2, .button3 {
     padding: 5px 15px;
-    background-color: transparent; /* Fundo transparente */
-    color: #00271a; /* Cor do texto */
-    border: 2px solid #00271a; /* Borda sólida */
-    border-radius: 20px; /* Arredonda as bordas */
-    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
-    font-size: 16px; /* Tamanho da fonte corrigido */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Animação suave para hover */
+    background-color: transparent;
+    color: #00271a;
+    border: 2px solid #00271a;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 6px;
 }
 
 button:hover, .button1:hover, .button2:hover, .button3:hover {
-    background-color: #001f00; /* Fundo colorido ao passar o mouse */
-    color: white; /* Texto branco ao passar o mouse */
+    background-color: #001f00;
+    color: white;
 }
 
+/* Botões Específicos */
 .button1 {
     transform: translateY(-100px);
     margin-right: 30px;
@@ -207,7 +204,7 @@ button:hover, .button1:hover, .button2:hover, .button3:hover {
     margin-left: 480px;
 }
 
-/* Espaçamento entre seções */
+/* Espaçamento Entre Seções */
 .spacing1 {
     margin-top: 5px;
 }
