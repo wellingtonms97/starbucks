@@ -1,0 +1,221 @@
+/* Reseta margens e padding padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte personalizada */
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Cabeçalho */
+header {
+    padding: 24px 0;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid rgba(158, 156, 156, 0.5); /* Linha divisória abaixo do cabeçalho */
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Distribui espaço entre logo e menu */
+    width: 100%; /* Ocupa toda a largura da tela */
+}
+
+.logo-wrapper {
+    flex: 0 0 auto; /* Não permite que a logo cresça */
+}
+
+.brand-logo img {
+    width: 40px;
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 30px;
+}
+
+.menu {
+    display: flex; /* Alinha os itens horizontalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    flex: 1 1 auto; /* Permite que o menu ocupe o espaço restante */
+    align-items: center; /* Alinha verticalmente todos os itens no centro */
+    margin-left: -5px;
+}
+
+.menu li {
+    display: flex; /* Faz com que o conteúdo do <li> se alinhe corretamente */
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    margin: 0 10px; /* Adiciona uma margem horizontal de 10px entre todos os itens */
+}
+
+.menu li a {
+    color: #807e7e;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 4px 16px; /* Espaçamento interno dos links */
+    display: flex;
+    align-items: center;
+    font-family: "New Amsterdam";
+    font-size: 15px;
+}
+
+.menu li img {
+    width: 100px;
+    height: auto;
+    margin-left: 1800px; /* Espaço à esquerda da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o ícone */
+}
+
+.menu li:nth-child(2) {
+    margin-left: -34px;
+    margin-right: -20px;
+}
+
+.menu li:nth-child(3) {
+    margin-left: 5px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #000; /* Cor do ícone */
+}
+
+/* Seções */
+section {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+section img {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.rectangle, .rectangle2, .rectangle3, .rectangle4 {
+    width: 1000px;
+    background-color: #d4e9e2;
+    margin-top: 20px; /* Espaçamento superior em relação à imagem */
+}
+
+.rectangle {
+    height: 150px; /* Altura do retângulo */
+}
+
+.rectangle2 {
+    height: 304px;
+}
+
+.rectangle3 {
+    height: 320px;
+}
+
+.rectangle4 {
+    height: 350px;
+    transform: translateY(-435px);
+}
+
+section p {
+    transform: translateY(-100px); /* Move o texto 100px para cima */
+    font-size: 17px;
+}
+
+/* Botões */
+button, .button1, .button2, .button3 {
+    padding: 5px 15px;
+    background-color: transparent; /* Fundo transparente */
+    color: #00271a; /* Cor do texto */
+    border: 2px solid #00271a; /* Borda sólida */
+    border-radius: 20px; /* Arredonda as bordas */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte corrigido */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animação suave para hover */
+    margin-top: 6px;
+}
+
+button:hover, .button1:hover, .button2:hover, .button3:hover {
+    background-color: #001f00; /* Fundo colorido ao passar o mouse */
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+.button1 {
+    transform: translateY(-100px);
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.button2 {
+    transform: translateY(-500px);
+    margin-right: 500px;
+    margin-top: 20px;
+}
+
+.button3 {
+    transform: translateY(-529px);
+    margin-right: -500px;
+    margin-top: 20px;
+}
+
+/* Banners */
+#image2, #image3, #image4 {
+    display: block;
+    height: auto;
+}
+
+#image2 {
+    width: 520px;
+    transform: translateY(-304px);
+    margin-left: 480px;
+}
+
+.texto2 {
+    transform: translateY(-500px);
+    font-size: 17px;
+    margin-right: 500px;
+    padding: 10px;
+}
+
+.banner2 {
+    margin-top: -55px;
+}
+
+#image3 {
+    width: 480px;
+    transform: translateY(-320px);
+    margin-right: 520px;
+}
+
+.texto3 {
+    transform: translateY(-530px);
+    font-size: 17px;
+    margin-right: -500px;
+    padding: 10px;
+}
+
+.banner3 {
+    margin-top: -410px;
+}
+
+#image4 {
+    width: 520px;
+    transform: translateY(-784px);
+    margin-left: 480px;
+}
+
+/* Espaçamento entre seções */
+.spacing1 {
+    margin-top: 5px;
+}
+
+.spacing2 {
+    margin-top: -65px;
+}
+
+.spacing3 {
+    margin-top: -427px;
+}
