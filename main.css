@@ -8,16 +8,15 @@
 /* Fonte Personalizada */
 .new-amsterdam-regular {
     font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
     font-style: normal;
 }
 
 /* Cabeçalho */
 header {
-    padding: 24px 0;
+    padding: 16px 0;
     background-color: white;
     color: black;
-    border-bottom: 1px solid rgba(158, 156, 156, 0.5); 
+    border-bottom: 1px solid rgba(158, 156, 156, 0.5);
 }
 
 .nav-wrapper {
@@ -28,7 +27,7 @@ header {
 }
 
 .logo-wrapper {
-    flex: 0 0 auto;
+    margin-right: 40px;
 }
 
 .brand-logo img {
@@ -43,7 +42,7 @@ header {
     list-style: none;
     flex: 1 1 auto;
     align-items: center;
-    margin-left: -5px;
+    margin-left: -70px;
 }
 
 .menu li {
@@ -53,20 +52,32 @@ header {
 }
 
 .menu li a {
-    color: #807e7e;
+    color: #353535;
     text-decoration: none;
     padding: 4px 16px;
     display: flex;
     align-items: center;
     font-family: "New Amsterdam";
     font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+    color: green;
+    text-decoration: none;
+    outline: none;
+}
+
+.imgs {
+    transform: translateX(60px);
 }
 
 .menu li img {
     width: 100px;
     height: auto;
     margin-left: 1800px;
-    margin-right: 10px;
+    margin-right: 70px;
 }
 
 /* Ícones */
@@ -83,36 +94,42 @@ section {
     align-items: center;
 }
 
+/* Retângulos de Fundo */
+.rectangle {
+    width: 1000px;
+    height: 150px;
+    background-color: #d4e9e2;
+    margin-top: 20px;
+}
+
+.rectangle2 {
+    width: 1000px;
+    height: 304px;
+    background-color: #d4e9e2;
+    margin-top: 20px;
+}
+
+.rectangle3 {
+    width: 1000px;
+    height: 320px;
+    background-color: #d4e9e2;
+    margin-top: 20px;
+}
+
+.rectangle4 {
+    width: 1000px;
+    height: 350px;
+    background-color: #d4e9e2;
+    transform: translateY(-435px);
+    margin-top: 20px;
+}
+
 /* Imagens das Seções */
 section img {
     width: 1000px;
     height: auto;
     display: block;
     margin-bottom: 20px;
-}
-
-/* Retângulos de Fundo */
-.rectangle, .rectangle2, .rectangle3, .rectangle4 {
-    width: 1000px;
-    background-color: #d4e9e2;
-    margin-top: 20px;
-}
-
-.rectangle {
-    height: 150px;
-}
-
-.rectangle2 {
-    height: 304px;
-}
-
-.rectangle3 {
-    height: 320px;
-}
-
-.rectangle4 {
-    height: 350px;
-    transform: translateY(-435px);
 }
 
 /* Texto das Seções */
@@ -122,7 +139,10 @@ section p {
 }
 
 /* Estilos de Botões */
-button, .button1, .button2, .button3 {
+button,
+.button1,
+.button2,
+.button3 {
     padding: 5px 15px;
     background-color: transparent;
     color: #00271a;
@@ -134,7 +154,10 @@ button, .button1, .button2, .button3 {
     margin-top: 6px;
 }
 
-button:hover, .button1:hover, .button2:hover, .button3:hover {
+button:hover,
+.button1:hover,
+.button2:hover,
+.button3:hover {
     background-color: #001f00;
     color: white;
 }
@@ -158,8 +181,12 @@ button:hover, .button1:hover, .button2:hover, .button3:hover {
     margin-top: 20px;
 }
 
+
+
 /* Banners */
-#image2, #image3, #image4 {
+#image2,
+#image3,
+#image4 {
     display: block;
     height: auto;
 }
@@ -176,6 +203,13 @@ button:hover, .button1:hover, .button2:hover, .button3:hover {
     margin-right: 500px;
     padding: 10px;
 }
+
+.texto4, .button4{
+    transform: translateY(1000px);
+    margin-left: -500px;
+    font-size: 16px;
+}
+
 
 .banner2 {
     margin-top: -55px;
@@ -202,6 +236,7 @@ button:hover, .button1:hover, .button2:hover, .button3:hover {
     width: 520px;
     transform: translateY(-784px);
     margin-left: 480px;
+    margin-bottom:-2000px ;
 }
 
 /* Espaçamento Entre Seções */
@@ -216,3 +251,125 @@ button:hover, .button1:hover, .button2:hover, .button3:hover {
 .spacing3 {
     margin-top: -427px;
 }
+
+/* Alinhamento de Links */
+.tent {
+    transform: translateX(30px);
+}
+
+.tent2 {
+    transform: translateX(-5px);
+}
+
+.tent3 {
+    transform: translateX(-40px);
+}
+
+
+.footer-container  {
+    display: flex; /* Exibe os itens em colunas */
+    justify-content: space-between; /* Distribui as colunas uniformemente */
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a linha de baixo se necessário */
+    padding: 10px; /* Espaço interno ao redor das colunas */
+    background-color: #f8f8f8; /* Cor de fundo do rodapé */
+    transform: translateX(-620px);
+    margin-top: 30px;
+}
+
+.footer-container div {
+    min-width: 200px; /* Define um tamanho mínimo para as colunas */
+}
+
+.footer-container h3 {
+    margin-bottom: 20px; /* Espaçamento entre o título e a lista */
+    font-size: 17px;
+    text-decoration: none;
+   
+}
+
+.footer-container ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
+}
+
+.footer-container ul li {
+    margin-bottom: 16px; /* Espaçamento entre os itens da lista */
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.footer-container ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor dos links */
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-bottom p{
+    transform: translateX(42px);
+    font-size: 10px;
+}
+
+.social, .footer-bottom {
+    display: flex;
+    flex-direction: column; /* Garante que o título e os logos fiquem em colunas */
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-1000px);
+    
+}
+
+.social-media {
+    display: flex; /* Alinha os itens da lista horizontalmente */
+    gap:10px; /* Reduz o espaço entre os logos */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 10px; /* Remove o padding padrão */
+   
+}
+
+
+.social-media img{
+    width: 20px;
+   
+}
+
+.impact img{
+    width: 100px;
+}
+
+
+.politica {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    padding-bottom: 15px;
+    transform: translateX(-858px);
+}
+
+.politica ul {
+    display: flex; /* Exibe os itens da lista em linha */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.politica ul li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+    font-size: 10px; /* Tamanho do texto */
+}
+
+.politica ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor dos links */
+}
+
+.politica ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.imgs2{
+    display: flex;
+    transform: translateX(500px);
